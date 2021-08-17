@@ -1,0 +1,4 @@
+Django
+newrelic
+gunicorn
+uvicorn

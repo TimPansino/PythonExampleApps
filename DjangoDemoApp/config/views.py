@@ -2,8 +2,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello World!")
+    return HttpResponse("Hello from Django!")
 
 
-def crash(request):
-    raise ValueError()
+def error(request):
+    raise RuntimeError("Oops")

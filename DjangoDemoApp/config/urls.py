@@ -24,5 +24,5 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("crash", views.crash, name="index"),
+    path("error", views.error, name="error"),
 ]
