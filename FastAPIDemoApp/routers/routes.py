@@ -17,5 +17,5 @@ async def index_async(request: Request, background_tasks: BackgroundTasks):
 
 
 @router.get("/error")
-async def index_async(request: Request, background_tasks: BackgroundTasks):
+async def error(request: Request, background_tasks: BackgroundTasks):
     raise RuntimeError("Oops")
