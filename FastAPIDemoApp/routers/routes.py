@@ -26,9 +26,9 @@ async def spotty():
     if random.randint(1, 5) == 5:
         raise RuntimeError("Oops")
     else:
-        return "Hello from Flask!"
+        return "Hello from FastAPI!"
 
 @router.get('/slow')
 async def slow():
     time.sleep(5)
-    return "Hello from Falcon! (slowly)"
+    return "Hello from FastAPI! (slowly)"

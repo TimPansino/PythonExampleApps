@@ -23,7 +23,7 @@ def spotty():
 @app.route('/slow')
 def slow():
     time.sleep(5)
-    return "Hello from Falcon! (slowly)"
+    return "Hello from Flask! (slowly)"
 
 
 if __name__ == '__main__':
