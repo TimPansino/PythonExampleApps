@@ -1,4 +1,6 @@
 from django.http import HttpResponse
+import time
+import random
 
 
 def index(request):
@@ -7,3 +9,13 @@ def index(request):
 
 def error(request):
     raise RuntimeError("Oops")
+
+def spotty():
+    if random.randint(1, 5) == 5:
+        raise RuntimeError("Oops")
+    else:
+        return HttpResponse("Hello from Flask!")
+
+def slow():
+    time.sleep(5)
+    return HttpResponse("Hello from Falcon! (slowly)")
