@@ -27,4 +27,8 @@ urlpatterns = [
     path("error", views.error, name="error"),
     path("spotty", views.spotty, name="spotty"),
     path("slow", views.slow, name="slow"),
+    path("class", views.IndexView.as_view(), name="index"),
+    path("class/error", views.ErrorView.as_view(), name="error"),
+    path("class/spotty", views.SpottyView.as_view(), name="spotty"),
+    path("class/slow", views.SlowView.as_view(), name="slow"),
 ]
