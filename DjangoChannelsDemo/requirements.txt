@@ -1,0 +1,11 @@
+# Base Project Dependencies
+newrelic
+Django
+channels
+channels_redis
+daphne
+
+# Other Dispatchers
+gunicorn
+uvicorn
+websockets
