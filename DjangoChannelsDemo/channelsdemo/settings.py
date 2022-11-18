@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'daphne',
     "chatsync",
     "chatasync",
+    "channelsdemo",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
