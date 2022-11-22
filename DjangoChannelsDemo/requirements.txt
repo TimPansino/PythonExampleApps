@@ -1,8 +1,9 @@
 # Base Project Dependencies
-newrelic
+# newrelic<7.15
+newrelic>=8.3.0
 Django
 channels
-channels_redis
+channels_redis<4
 daphne
 
 # Other Dispatchers
