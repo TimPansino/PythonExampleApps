@@ -1,0 +1,3 @@
+newrelic[infinite-tracing]
+Flask
+gunicorn
